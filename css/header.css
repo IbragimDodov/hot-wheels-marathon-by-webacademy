@@ -43,6 +43,7 @@
     height: 6px;
     background-color: #004cff;
 
+    pointer-events: none;
 
     transform: rotate(45deg);
 }
