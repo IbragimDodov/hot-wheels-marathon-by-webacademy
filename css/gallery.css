@@ -1,0 +1,7 @@
+.gallery {
+    display: flex;
+}
+
+.gallery__item {
+    width: 33.33333%;
+}
