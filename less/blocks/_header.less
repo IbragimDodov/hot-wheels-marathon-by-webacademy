@@ -1,29 +1,46 @@
 .header {
-    height: 800px;
+    height: 454px;
     width: 100%;
     padding-top: 36px;
     background-color: #f3e1d5;
     background-image: url('../img/header-bg-1.jpg');
     background-size: cover;
     background-position: center;
+
+    // @media (min-height: 530px) {
+    //     height: calc(~"100vh - 78px");
+    // }
+
+    @media (min-width: 980px) {
+        height: 800px;
+    }
 }
 
 .header__nav-row {
-    margin-bottom: 150px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
+
+    @media (min-width: 980px) {
+        align-items: center;
+        margin-bottom: 150px;
+    }
 }
 
 .header__nav {
-    display: flex;
-    color: #404040;
-    font-family: 'Teko', sans-serif;
-    font-weight: 600;
-    font-size: 23px;
-    text-transform: uppercase;
-    letter-spacing: 0.45px;
-    
+    display: none;
+
+    @media (min-width: 980px) {
+        display: flex;
+        color: #404040;
+        font-family: 'Teko', sans-serif;
+        font-weight: 600;
+        font-size: 23px;
+        text-transform: uppercase;
+        letter-spacing: 0.45px;
+    }
 }
 
 .header__nav-link {
@@ -61,41 +78,59 @@
 }
 
 .header__button {
-    height: 66px;
-    padding-top: 23px;
-    padding-left: 38px;
-    padding-right: 38px;
-    background-color: #004cff;
+    display: none;
 
-    color: #fff;
-    font-family: 'Teko', sans-serif;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 0.45px;
-    text-decoration: none;
+    @media (min-width: 980px) {
+        display: inline-block;
+        height: 66px;
+        padding-top: 23px;
+        padding-left: 38px;
+        padding-right: 38px;
+        background-color: #004cff;
 
-    transition: background-color 0.2s ease-in;
+        color: #fff;
+        font-family: 'Teko', sans-serif;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.45px;
+        text-decoration: none;
+
+        transition: background-color 0.2s ease-in;
+    }
 }
 
 .header__button:hover {
     background-color: #244fb3;
 }
 
+.header__nav-button {
+    @media (min-width: 980px) {
+        display: none;
+    }
+}
+
 .header__promo {
     max-width: 400px;
-    
 }
 
 .header__title {
+    font-size: 42px;
     margin-bottom: 60px;
     color: #fff;
     font-family: 'Teko', sans-serif;
-    font-size: 68px;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 1.05;
     letter-spacing: 2.73px;
+
+    @media (min-width: 480px) {
+        font-size: 52px;
+    }
+
+    @media (min-width: 980px) {
+        font-size: 68px;
+    }
 }
 
 .header__promo-button {
